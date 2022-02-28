@@ -2,6 +2,16 @@
 
 Console.WriteLine("Please guess the Secret Number.");
 
-string guess = Console.ReadLine();
+int guess = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Your guess was {guess}.");
+int secretNumber = 42;
+
+if (guess == secretNumber)
+{
+  Console.WriteLine("You guessed right!!");
+}
+else
+{
+  Console.WriteLine("Sorry, you guessed wrong.");
+}
+
