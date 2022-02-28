@@ -4,7 +4,7 @@ Console.WriteLine("Please select a difficulty level: Easy(1), Medium(2), Hard(3)
 
 int chosenDifficulty = int.Parse(Console.ReadLine());
 
-int secretNumber = new Random().Next(1, 100);
+int secretNumber = new Random().Next(1, 101);
 
 int tries = 0;
 
