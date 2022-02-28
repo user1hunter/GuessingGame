@@ -21,7 +21,14 @@ while (guessNumber <= tries)
   }
   else
   {
-    Console.WriteLine("Sorry, you guessed wrong.");
+    if (guess < secretNumber)
+    {
+      Console.WriteLine("Sorry, you guessed low.");
+    }
+    else
+    {
+      Console.WriteLine("Sorry, you guessed high.");
+    }
 
     if (tries - guessNumber == 1)
     {
